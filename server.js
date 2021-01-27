@@ -9,3 +9,9 @@ const chalk = require('chalk');
 // this will reset everytime you log in with, it's taking the place of the data base that I will use later. 
 let user = {};
 
+// Facebook strategy
+passport.use(new FacebookStradegy({
+    clientID: keys.FACEBOOK.ClientId,
+    clientSecret: keys.FACEBOOK.clientSecret,
+    callBackUrl: "/auth/facebook/callback"
+}))
