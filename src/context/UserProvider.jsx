@@ -16,8 +16,9 @@ const UserProvider = ({children}) => {
     }, [])
     // returning the component of the user provider. 
     return (
+        // passing the value and provider
         <context.Provider value={user}>
-            {children}
+            {children} // rendering the children that are being provided. 
         </context.Provider>
     )
 };
