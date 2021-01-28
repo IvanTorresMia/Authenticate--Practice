@@ -12,6 +12,18 @@ const UserProvider = ({children}) => {
         .then(res => setUser(res)) //setting the state of the user to the response. 
         .catch(err => {
             console.log(err) //if there is an error we console.log it. 
-        })
-    })
+        });
+    }, [])
+    // returning the component of the user provider. 
+    return (
+        <context.Provider value={user}>
+            {children}
+        </context.Provider>
+    )
 };
+
+// Setting setting the ontext for the user provider to the context that we created which originally was just null. 
+UserProvider.context = context;
+
+// exporting it like we export any other component. 
+export default UserProvider;

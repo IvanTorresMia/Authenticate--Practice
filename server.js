@@ -8,12 +8,12 @@ const chalk = require("chalk");
 const { Strategy } = require("passport");
 
 // this will reset everytime you log in with, it's taking the place of the data base that I will use later.
-let user = {};
+let user = {}; //Not sure why this is not being called or being read, so it might not work and I will figure out how to fix it. 
 
 passport.serializeUser((user, cb) => {
   cb(null, user);
 });
-
+ 
 passport.deserializeUser((user, cb) => {
   cb(null, user);
 });
