@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import history from './History'
 import UseProvider from './context/UserProvider';
 import Home from './Pages/Home';
@@ -12,8 +12,8 @@ const App = () => {
    <Router>
      <UseProvider history={history}>
        {/* These componennts are going to relly on authentication */}
-      <Route path="/MenuBar" component={MenuBar}/>
-      <Route path="/profile" component={Profile}/>
+      <Route path="/" component={MenuBar}/>
+      <Route path="/Profile" component={Profile}/>
      </UseProvider>
      <Route path="/" exact component={Home}/>
    </Router>

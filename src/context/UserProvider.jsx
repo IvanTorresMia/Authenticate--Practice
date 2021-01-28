@@ -18,7 +18,7 @@ const UserProvider = ({children}) => {
     return (
         // passing the value and provider
         <context.Provider value={user}>
-            {children} // rendering the children that are being provided. 
+            {children}
         </context.Provider>
     )
 };
