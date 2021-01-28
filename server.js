@@ -34,6 +34,7 @@ passport.use(
   )
 );
 
+// this is our app component which is our library that is being used 
 const app = express();
 app.use(cors());
 app.use(passport.initialize());
@@ -48,6 +49,14 @@ app.get(
   })
 );
 
+// here we are listening to our port 3000
+// either we take our process enviroment or port 3000
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT);
+
+// quick notes that in the real world we will use
+// a back end, for our app we will use sequelize and
+// router, it's just cleaner and easier to follow with
+// rthe routes and all. 
+// look to the cookbook app and past projects
