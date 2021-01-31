@@ -1,11 +1,12 @@
 // requiring packages
-const express = require("express");
-const cors = require("cors");
-const passport = require("passport");
-const FacebookStradegy = require("passport-facebook").Strategy;
-const keys = require("./config");
-const chalk = require("chalk");
-const { Strategy } = require("passport");
+const express = require("express"); //requiring express
+const cors = require("cors"); // requiring cors for auth
+const passport = require("passport"); // requiring passport for auth.
+const FacebookStradegy = require("passport-facebook").Strategy; // getting the facebook strategy
+const keys = require("./config"); // here are the client keys and secrets
+const chalk = require("chalk"); // just cause color.
+const { Strategy } = require("passport"); // might have missed something here 
+
 
 // this will reset everytime you log in with, it's taking the place of the data base that I will use later.
 let user = {}; //Not sure why this is not being called or being read, so it might not work and I will figure out how to fix it. 
@@ -55,8 +56,3 @@ const PORT = process.env.PORT || 3000;
 
 app.listen(PORT);
 
-// quick notes that in the real world we will use
-// a back end, for our app we will use sequelize and
-// router, it's just cleaner and easier to follow with
-// rthe routes and all. 
-// look to the cookbook app and past projects
