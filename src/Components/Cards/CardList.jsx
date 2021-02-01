@@ -4,7 +4,7 @@ import { data } from '../../data'
 
 
 
-
+// This is like a wrapper that will render a bunch of cards.
 const CardList = () => {
 
     return data.map(app => {
