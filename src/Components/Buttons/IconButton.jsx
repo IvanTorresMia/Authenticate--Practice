@@ -1,6 +1,8 @@
 import React from "react";
 
-const IconButton = ({ app }) => {
+function IconButton({ app }) {
+
+
   const { img, href, alt, color, txt, name } = app;
 
   return (

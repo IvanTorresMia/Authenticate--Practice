@@ -2,7 +2,7 @@ import React from "react";
 
 
 // Our Cards
-const Cards = ({ img, name, href, color }) => {
+const Card = ({ img, name, href, color }) => {
   // Here we are taking the name handed to us as props. and manipulating it.
   const NAME = name.charAt(0).toUpperCase() + name.substring(1, name.length);
   return (
@@ -29,4 +29,4 @@ const Cards = ({ img, name, href, color }) => {
   );
 };
 
-export default Cards;
+export default Card;
