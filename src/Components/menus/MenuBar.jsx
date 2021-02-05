@@ -11,6 +11,8 @@ import LogoutIcon from '@material-ui/icons/MeetingRoom';
 
 const MenuBar = () => {
 
+    const userData = useContext(UserProvider.context);
+
     return (
         <div>
             MenuBar!!!
