@@ -1,4 +1,4 @@
-import FacebookIcon from "../facebook.png"
+import FacebookIcon from "../res/facebook.png"
 
 
 
